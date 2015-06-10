@@ -1,6 +1,6 @@
-var app = angular.module('app', []);
+angular.module('app', []);
 
-app.controller('MainCtrl', function MainCtrl($timeout) {
+angular.controller('MainCtrl', function MainCtrl($timeout) {
   var vm = this;
 
   vm.goodFoo = {
@@ -15,9 +15,9 @@ app.controller('MainCtrl', function MainCtrl($timeout) {
 });
 
 
-app.constant('scopeTypesDirective', angularScopeTypes().directive);
+angular.constant('scopeTypesDirective', angularScopeTypes().directive);
 
-app.directive('scopeTypedDir', function(scopeTypesDirective) {
+angular.directive('scopeTypedDir', function(scopeTypesDirective) {
   return scopeTypesDirective({
     template: `
       <div>
