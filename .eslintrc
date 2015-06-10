@@ -38,6 +38,7 @@
     "require": false,
     "module": false,
     "__filename": false,
+    "angular": true,
 
 
     "ATAC_CONFIG": true,
